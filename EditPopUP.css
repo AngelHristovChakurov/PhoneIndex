@@ -1,0 +1,118 @@
+﻿body {
+    width:100%;
+    height:100%
+}
+#big-pp {
+    background-color:rgba(0, 0, 0, 0.72);
+    width:100%;
+    height:100%;
+}
+#x-button-one {
+    position: absolute;
+    left: 410px;
+    background-image:url("images/popup_X.png");
+    height: 37px;
+    width: 38px;
+}
+#edit
+{
+    position: relative;
+    width: 799px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2em;
+    padding: 2em;
+    padding-top: 0em;
+    background-image: url("images/big_PP.png");
+    background-size: 100% 100%;
+}
+#save {
+    position: absolute;
+    bottom:19px;
+    background-image:url("images/log_in.png");
+    background-color: transparent;
+    background-size: 100% 100%;
+    width: 161px;
+    height: 55px;
+    border:none;
+    left:220px;
+}
+#no {
+    position: absolute;
+    bottom:20px;
+    right: auto;
+    left:450px;
+    width: 161px;
+    height: 55px;
+    background-image:url("images/cancel.png");
+    background-color: transparent;
+    border:none;
+    background-size: 100% 100%;
+}
+#buttons {
+
+}
+#info-list {
+    margin-top: 73px;
+    display:inline-block;
+    margin-left:200px;
+    
+}
+.json-info {
+    text-decoration:none;
+    margin-bottom:48px;
+    
+}
+.pop-up-x {
+    position:absolute;
+    left:824px !important;
+
+}
+#edit-group {
+    top:65px;
+}
+#edit-department {   
+    top:392px;
+}
+#edit-position {   
+     top:328px;
+}
+#edit-name { 
+    top:130px;
+}
+#edit-phone {
+   top:196px;
+}
+#edit-mail{
+    top:262px;
+}
+.json-info-input {
+    background-image: url("images/text_input.png");
+    position: absolute;
+    width: 150px;
+    height: 50px;
+    left: 410px;
+    margin-bottom: 16px;
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: transparent;
+    border: none;
+    background-size: 100% 100%;
+
+}
+#user-photo {
+    position: absolute;
+    display: inline-block;
+    background-image: url("images/user_icon.png");
+    width: 100px;
+    height: 100px;
+    top: 70px;
+    left: 33px;
+    background-size: 100% 100%;
+}
+#deleted-pp {
+    position: absolute;
+    right: 45px !important;
+    top:0px;
+}

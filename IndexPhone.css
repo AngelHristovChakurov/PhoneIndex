@@ -1,0 +1,530 @@
+body {
+    margin:0;
+    background-color:gray;
+    padding:0;
+    overflow-y:auto;
+    width:1024px;
+    height:768px;
+}
+
+* {
+    margin:0;
+    padding:0;
+    -webkit-tap-highlight-color: transperant; 
+    
+}
+
+div, p, a {
+    font-family: arial;
+}
+
+a {
+    cursor: pointer;
+}
+
+#main 
+{
+    width:1024px;
+    height:768px;
+}
+
+#header
+{
+    position: fixed;
+    width:1024px;
+    height: 104px;
+    z-index: 5;
+    background-image: linear-gradient(bottom, rgb(61,61,61) 45%, rgb(133,125,133) 73%);
+background-image: -o-linear-gradient(bottom, rgb(61,61,61) 45%, rgb(133,125,133) 73%);
+background-image: -moz-linear-gradient(bottom, rgb(61,61,61) 45%, rgb(133,125,133) 73%);
+background-image: -webkit-linear-gradient(bottom, rgb(61,61,61) 45%, rgb(133,125,133) 73%);
+background-image: -ms-linear-gradient(bottom, rgb(61,61,61) 45%, rgb(133,125,133) 73%);
+
+background-image: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    color-stop(0.45, rgb(61,61,61)),
+    color-stop(0.73, rgb(133,125,133))
+);
+}
+
+#headbar
+{
+    width: 99.8%;
+    height: 24%;
+    background-image: url("../../images/headbar.png");
+    background-size: 100% 100%;
+    border:1px solid;
+    border-top:none;
+    padding-top:3px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.logo-img 
+{
+     background-image: url("../../images/logo.png");
+     height:80%;
+     margin-left:43%;
+     width:200px;
+     background-repeat: no-repeat;
+}
+
+#edit-group {
+
+}
+
+.edit-groups
+{
+    position: absolute;
+    text-decoration: none;
+    -webkit-background-size: 100% 100%;
+    background-image: url("images/add_button.png");
+    background-size: 100% 100%;
+    color: rgb(255, 255, 255);
+    cursor: default;
+    display: inline-block;
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    height: 35px;
+    height: 58px;
+    padding-right: 3px;
+    padding-top: 4px;
+    width: 92px;
+    z-index: 2;
+    left: 0.5%;
+    text-align: center;
+    top: 37%;
+    font-size: 19px;
+}
+
+.tab
+{
+    font-size: 125%;
+    display: inline-block;
+    position: absolute;
+    width: 9em;
+    height: 2em;
+    margin-top: -2em;
+    background-size: 100% 100%;
+    text-align: center;
+    line-height: 1.6em;
+    background-image: url("../../admin/images/tab_user.png");
+    
+}
+
+.tab > a
+{
+    color:black !important;
+    font-size: 20px;
+}
+
+#all
+ {
+    left:7em;
+}
+
+.tab-selected {
+    z-index:1;
+    background-image: url("../../admin/images/tab_admin.png");
+}
+
+.control-bar 
+{
+    height:5%;
+    width:100%;
+    background-color:#b1b1b1;
+}
+
+#table 
+{
+    
+    width:100%;
+    height:100%;
+    padding:0;
+    margin:0;
+    border-collapse:collapse;
+}
+
+.table
+{
+    position: fixed;
+    top: 145px;
+    width:1024px;
+    z-index: 5;
+    display: table;
+}
+
+.table-row 
+{
+    width:1024px !important;
+    height:70px;
+    width: 98.7%;
+    z-index: 1;
+    display: table-row;
+}
+
+.table-head {
+    height:100%;
+    display:table-cell;
+    margin:0;
+    padding:0;
+    color:white;
+    background-image: url(images/s-silk.png);
+    border-color:black;
+    background-repeat: repeat-x;
+}
+
+.table-content
+{
+    width: 100%;
+    height:92px;
+    padding:0;
+    margin:0;
+    display: table-row;
+}
+
+.content-holder 
+{
+    overflow: none;
+    width: 100%;
+    display: table;
+}
+    .content-holder:last-child {
+        padding-bottom:450px !important;
+    }
+    .content-holder:first-child {
+        margin-top:180px !important;
+    }
+
+.table-cell
+{
+    min-width: 226px;
+    position:relative;
+    display:table-cell;
+    border: 1px solid;
+    overflow:hidden;
+    border-left:none;
+    margin: 0px;
+    padding: 0px;
+    background-image: linear-gradient(bottom, rgb(84,89,94) 29%, rgb(136,139,148) 65%);
+    background-image: -o-linear-gradient(bottom, rgb(84,89,94) 29%, rgb(136,139,148) 65%);
+    background-image: -moz-linear-gradient(bottom, rgb(84,89,94) 29%, rgb(136,139,148) 65%);
+    background-image: -webkit-linear-gradient(bottom, rgb(84,89,94) 29%, rgb(136,139,148) 65%);
+    background-image: -ms-linear-gradient(bottom, rgb(84,89,94) 29%, rgb(136,139,148) 65%);
+    background-image: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    color-stop(0.29, rgb(84,89,94)),
+    color-stop(0.65, rgb(136,139,148))
+);
+}
+
+.head-p 
+{
+    margin:5%;
+    min-width: 200px;
+    width: 20px;
+    margin-left:20%;
+    display:inline-block;
+    font-size: x-large;
+    vertical-align: -webkit-baseline-middle;
+}
+
+.cell-p {
+    position: absolute;
+    top: 18px;
+    left: 7px;
+    margin:5%;
+    min-width: 200px;
+    width: 20px;
+    margin-left:20%;
+    display:inline-block;
+    font-size: x-large;
+    vertical-align: -webkit-baseline-middle;
+}
+
+#head-name 
+{
+    margin-left:36%;
+    margin-right:20px;
+}
+
+.photo 
+{
+    left: 10px;
+    top: 25px;
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    position: relative;
+}
+
+#phone-img 
+{
+    display:inline-block;
+    background-size:100% 100%;
+    width:42px;
+    height:35px;
+    margin: 7px 8px 0px 8px;
+}
+
+#tabs 
+{
+    background-color:#b1b1b1;
+    height:30px;
+}
+
+#tabs ul
+{
+    margin: 0px;
+    width:1024px;
+    left: 0px;
+    padding:0;
+    position: fixed;
+    z-index: 5;
+    top: 96px;
+}
+
+#tabs ul li a
+{
+    text-decoration:none;
+    color:white;
+}
+
+#tabs-1
+{
+    width:100%;
+    background-color:#b1b1b1;
+    display:inline-block;
+}
+
+#tabs-2 
+{
+    width:100%;
+    background-color:#b1b1b1;
+    display:inline-block;
+}
+
+#tabs-3 
+{
+    width:100%;
+    background-color:#b1b1b1;
+    display:inline-block;
+}
+
+.div-chars 
+{
+    height: 25px;
+}
+
+.add-user 
+{
+    position: absolute;
+    width: 88px;
+    height: 53px;
+    top: -5px;
+    left: -2px;
+    margin: 1%;
+    background-size: 100% 100%;
+    display: inline-block;
+    border-radius: 6px;
+    background-image: url("../../admin/images/add_button.png");
+}
+    .add-user a {
+        position: absolute;
+        top: 10px;
+        left: 27px;
+    }
+
+.div-chars {
+    height:26px;
+    width:100%;
+    z-index:1;
+    background-color:rgb(149, 154, 160);
+}
+
+.char-groups 
+{
+    background-color:#f6ba0d;
+    width:1024px;
+}
+
+.char-groups a
+{
+    display:inline-block;
+    border-radius:2px;
+    margin-top:2px;
+    color:black;
+    text-decoration:none;
+    font-size:26px;
+    padding: 2px;
+}
+.all-tabs {
+    height:480px;
+}
+
+#new-tab {
+    position:absolute;
+    right:-2px;
+}
+    #new-tab a {
+        background-image:none;
+    }
+.tab-deleted {
+    position:absolute;
+    right: 8em;
+}
+    .tab-deleted a {
+        background-image:none;
+        color:white !important;
+    }
+#editImg 
+{
+    left: 10px;
+    top: 10px;
+    right: 4%;
+    display: inline-block;
+    width: 73px;
+    height: 39px;
+    position: relative;
+    background-image:url("../../admin/images/add_button.png");
+
+}
+
+#contactInfoPopUp 
+{
+    position: relative;
+    width: 20em;
+    height: 13em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4em;
+    padding: 2em;
+    padding-top: 0em;
+    background-image: url("images/popup_background.png");
+    background-size: 100% 100%;
+
+}
+
+.edit-button 
+{
+    width: 60px;
+    top:10px;
+    z-index:1;
+    height: 42px;
+    margin: 7px;
+    padding-left: 28px;
+    padding-top: 13px;
+    display: inline-block;
+    position: relative;
+    border-radius: 6px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-image: url("../../admin/images/add_button.png");
+    color: white;
+}
+
+.edit-holder {
+    background-image: linear-gradient(bottom, rgb(84,89,94) 29%, rgb(136,139,148) 65%);
+    background-image: -o-linear-gradient(bottom, rgb(84,89,94) 29%, rgb(136,139,148) 65%);
+    background-image: -moz-linear-gradient(bottom, rgb(84,89,94) 29%, rgb(136,139,148) 65%);
+    background-image: -webkit-linear-gradient(bottom, rgb(84,89,94) 29%, rgb(136,139,148) 65%);
+    background-image: -ms-linear-gradient(bottom, rgb(84,89,94) 29%, rgb(136,139,148) 65%);
+    background-image: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    color-stop(0.29, rgb(84,89,94)),
+    color-stop(0.65, rgb(136,139,148))
+);
+    border: 1px solid;
+    border-right: none;
+    height: 84px;
+    margin-top: 0px;
+    display: table-cell;
+    max-width: 88px;
+    position:relative;
+    
+}
+
+.selected-bookmark
+{
+    background-size: 100% 98%;
+    border-color: black;
+    background-image: url("images/lupa.png");
+    font-size: 45px !important;
+    padding-left: 14px !important;
+    width: 42px !important;
+}
+
+.ui-autocomplete
+{
+    background-color: #fff;
+    position: fixed;
+}
+
+.img-call 
+{
+    left: 5%;
+    top: 25px;
+    position:absolute;
+}
+
+.li-input {
+    width: 90px;
+    padding-left: 10px;
+    background: transparent;
+    font-size:18px;
+    margin-top:3px;
+    border-radius: 7px;
+    background-color:#cccccc;
+}
+#pop-up-groups {
+
+}
+
+#pop-up-groups > li {
+
+   list-style-type:none;
+   display: inline-block;
+   position: absolute;
+   width: 9em;
+   height: 2em;
+   margin-top: 12px;
+   background-size: 100% 100%;
+   font-size: 1em;
+   text-align: center;
+   line-height: 1.6em;
+   background-image: url("../../admin/images/tab_user.png");
+}
+
+#newTab-a {
+    color:white !important;
+}
+
+#check-box-pp {
+    display: inline-block;
+    position: absolute;
+    bottom: 138px;
+    left: 221px;
+}
+#form-li {
+    width: 170px;
+    position: absolute;
+    left: -6px;
+    bottom: 6px;
+}
+#check-is-internal {
+    position: absolute;
+    left: 190px;
+    bottom: 2px;
+    width: 37px;
+    height: 36px;
+    background-image:url("images/unchek.png");
+}
+.tab a {
+    background-image:none;
+}

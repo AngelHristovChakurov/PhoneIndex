@@ -1,0 +1,227 @@
+﻿#right-controller 
+{
+    display: inline-block;
+    width: 331px;
+    height: 768px;
+    position: absolute;
+    top: 1px;
+    right: -100px;
+    left: 1030px;
+    z-index:5;
+}
+#side-galery
+{
+    background-image: url("images/galery.png");
+    width:115px;
+    height:768px;
+    display:inline-block;
+    background-repeat:no-repeat;
+    position:relative;
+    z-index:5;
+}
+#arrow-up 
+{
+    position:absolute;
+    background-image: url("images/up.png");
+    display:inline-block;
+    display:inline-block;
+    width:73px;
+    height:41px;
+    top: 20px;
+    left: 20px;
+    z-index:5;
+}
+#arrow-down
+{
+    position:absolute;
+    background-image: url("images/down.png");
+    display:inline-block;
+    width:73px;
+    height:41px;
+    bottom: 139px;
+    left: 20px;
+    z-index:5;
+}
+#beds-img 
+{
+    position:absolute;
+    background-image: url("images/all-beds.png");
+    display:inline-block;
+    width:91px;
+    height:91px;
+    bottom: 30px;
+    left: 13px;
+    z-index:5;
+}
+#remote 
+{
+    background-image: url("images/remote.png");
+    width:212px;
+    height:768px;
+    display:inline-block;
+    background-repeat:no-repeat;
+    position:relative;
+    z-index:5;
+}
+#input 
+{
+    position:absolute;
+    background-image: url("images/password.png");
+    display:inline-block;
+    background-repeat:no-repeat;
+    padding-left:20px;
+    width: 167px;
+    height: 32px;
+    top: 140px;
+    left: 10px;
+    border-radius: 10px;
+    z-index:5;
+}
+#photo-remote  
+{
+    background-repeat:no-repeat;
+    background-image: url("images/user-icon.png");
+	display: inline-block;
+	position: absolute;
+    width:113px;
+    height:112px;
+    top: 188px;
+    left: 48px;
+	z-index:5;
+}
+#login 
+{
+    background-repeat:no-repeat;
+    background-image: url("images/homelog-in.png");
+	display: inline-block;
+	position: absolute;
+    width: 120px;
+    height: 49px;
+    top: 310px;
+    left: 45px;
+    text-align: center;
+    padding-top: 9px;
+    font-size: 25px;
+    color:#d2d5da;
+    z-index:5;
+}
+#mic-img 
+{
+    background-repeat:no-repeat;
+    background-image: url("images/mic_ON.png");
+	display: inline-block;
+	position: absolute;
+    width: 58px;
+    height: 60px;
+    top: 395px;
+    left: 33px;
+    z-index:5;
+}
+#mic-off 
+{
+    background-repeat:no-repeat;
+    background-image: url("images/mic-off_ON.png");
+	display: inline-block;
+	position: absolute;
+    width: 58px;
+    height: 60px;
+    top: 395px;
+    left: 125px;
+    z-index:5;
+}
+#on 
+{
+	display: inline-block;
+	position: absolute;
+    width:123px;
+    height:40px;
+    top: 450px;
+    left: 48px;
+    color:#d2d5da;
+    z-index:5;
+}
+#off 
+{
+	display: inline-block;
+	position: absolute;
+    width:123px;
+    height:40px;
+    top: 450px;
+    left: 137px;
+    color:#d2d5da;
+    z-index:5;
+}
+#camera-on 
+{
+    background-repeat:no-repeat;
+    background-image: url("images/camera_ON.png");
+	display: inline-block;
+	position: absolute;
+    width: 58px;
+    height: 60px;
+    top: 496px;
+    left: 34px;
+    z-index:5;
+}
+#camera-off 
+{
+    background-repeat:no-repeat;
+    background-image: url("images/camera_off_ON.png");
+	display: inline-block;
+	position: absolute;
+    width: 58px;
+    height: 60px;
+    top: 496px;
+    left: 125px;
+    z-index:5;
+}
+#volume-minus 
+{
+    background-repeat:no-repeat;
+    background-image: url("images/vol-_ON.png");
+	display: inline-block;
+	position: absolute;
+    width: 58px;
+    height: 60px;
+    top: 600px;
+    left: 140px;
+    z-index:5;
+}
+#volume-stop 
+{
+    background-repeat:no-repeat;
+    background-image: url("images/mute_ON.png");
+	display: inline-block;
+	position: absolute;
+    width: 58px;
+    height: 60px;
+    top: 600px;
+    left: 79px;
+    z-index:5;
+}
+#volume-plus 
+{
+    background-repeat:no-repeat;
+    background-image: url("images/vol+_ON.png");
+	display: inline-block;
+	position: absolute;
+    width: 58px;
+    height: 60px;
+    top: 600px;
+    left: 18px;
+    z-index:5;
+}
+#keyboard_button 
+{
+    background-repeat:no-repeat;
+    background-image: url("images/key.png");
+	display: inline-block;
+	position: absolute;
+    position: absolute;
+    width: 121px;
+    height: 60px;
+    top: 675px;
+    left: 46px;
+    z-index:5;
+}body {
+}

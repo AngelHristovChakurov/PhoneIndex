@@ -1,0 +1,95 @@
+﻿
+#contactInfoPopup {
+    background-color:rgba(0, 0, 0, 0.72);
+    width:100%;
+    height:100%;
+}
+.popup {
+   display: none;
+   position: fixed;
+   z-index: 10;
+  }
+div.popup-panel
+{
+	width: 20em;
+    position:relative;
+	height: 13em;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 4em;
+	padding: 2em;
+	padding-top: 0em;
+	background-image: url("images/popup_background.png");
+	background-size: 100% 100%;
+}
+
+.buttons {
+        width: 45%;
+    height: 2.5em;
+    font-size: 1.2em;
+    background: transparent;
+    border: none;
+
+    background-size: 100% 100%;
+
+}
+
+
+.call-green {
+    background-image: url("images/call.png");
+    position: relative;
+    top: 135px;
+    right: 75px;
+}
+.call-red {
+    background-image: url("images/end.png");
+    position: relative;
+    top: 135px;
+    right: 75px;
+}
+#message {
+    position: relative;
+    left: 180px;
+    top: 87px;
+    background-image: url("images/massage.png");
+}
+#img-phone {
+
+    background-image: url("../../admin/images/user_icon.png");
+	background-size: 100%;
+    height: 63px;
+    width: 63px;
+    display:inline-block;
+    position: relative;
+top: 50px;
+
+}
+.pop-up-x {
+    
+    
+}
+#x-button-two {
+    position: absolute;
+    left: 350px !important;
+    background-image:url("images/popup_X.png");
+    height: 37px;
+    width: 38px;
+}
+#department {
+    
+    top: 48px;
+}
+#position {
+
+    top: 95px;
+}
+
+#name {
+   
+    top: 137px;
+}
+.person-info {
+    position:absolute;
+    font-size:1.3em;
+    left: 120px;
+}

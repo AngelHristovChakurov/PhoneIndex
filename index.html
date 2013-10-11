@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <meta http-equiv="cache-control" content="no-cache" />
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+    <script src="jquery.scrollTo-1.4.3.1.js"></script>
+	<link href="jquery-ui-1.10.3.custom.min.css" rel="stylesheet" />
+    <link href="StyleSheet.css" rel="stylesheet" />
+    <link href="EditPopUP.css" rel="stylesheet" />
+    <link href="IndexPhone.css" rel="stylesheet"/>
+    <link href="Message.css" rel="stylesheet" />
+	<link href="keyboard.css" rel="stylesheet"/>
+    <link href="remote.css" rel="stylesheet" />
+</head>
+<body>
+        
+    <div id="main">
+        <div id="header">
+            <div class="edit-groups">Edit groups</div>
+			<div id="headbar">
+				<div class="logo-img"></div>
+			</div>
+		</div>
+        <div id="tabs">
+            <ul id="groups">
+                <li class="tab" id="all"><a href="#tab-all">All Stuff</a></li>
+            </ul>
+            <div  id="tab-all" class="all-tabs">
+            </div>
+        </div>
+              
+        <div class="popup" id="contactInfoPopup">
+        <div class="popup-panel">
+            <div class="pop-up-x" id="x-button-two"></div>
+            <div id="img-phone"></div>
+            <a class="person-info" id="department"></a>
+            <a class="person-info" id="position"></a>
+            <a class="person-info" id="name"></a>
+			    <input class ="buttons call-green" id="call" type="submit" value=""/>
+                <input class ="buttons" id="message" type="submit" value=""/>
+			
+		    </div>
+        </div>
+        <div  class="popup" id="big-pp">
+            
+            <div id="edit" class="popup-panel">
+                <div id="user-photo"></div>
+                <ul id="pop-up-groups"></ul>
+			<div class="pop-up-x" id="x-button-one" ></div>
+				<input class ="buttons" id="save" type="submit" value="Apply"/>
+				<input class ="buttons" id="no" type="submit" value="Cancel"/>
+            <ul id="info-list">
+				 <li id="json-info-group" class="json-info">Group</li>
+                 <li id="json-info-name" class="json-info">Name</li>
+                 <li id="json-info-phone" class="json-info">Phone</li>
+                 <li id="json-info-mail" class="json-info">Mail</li>
+                 <li id="json-info-position" class="json-info">Position</li>
+				 <li id="json-info-department" class="json-info">Department</li>
+            </ul>
+			    <input type="hidden" id="edit-contact-id" class="json-info-input" />
+			    <input id="edit-department" class="json-info-input" />
+			    <input id="edit-position" class="json-info-input" />
+			    <input id="edit-name" class="json-info-input" />
+			    <input id="edit-phone" class="json-info-input" />
+			    <input id="edit-mail" class="json-info-input" />
+                <input id="edit-group" class="json-info-input" readonly />
+                <form id="check-box-pp" action="">
+                <li id="form-li">Internal contact</li> <img id="check-is-internal" ></img>
+                </form>
+			</div>
+		</div>
+        <div class="popup" id="message-pp">
+            <div class="popup-panel" id="message-container">
+			    <input class ="buttons-message " id="send" type="submit" value="Send"/>
+                <input class ="buttons-message " id="cancel-message" type="submit" value="Cancel"/>
+                    <p id="subject-p">Subject</p>
+                <input id="subject"  class="input-message " />
+                    <p id="text-p">Message</p>
+                <textarea id="message-text"></textarea>
+        
+		</div>
+    </div>
+    </div>
+    <script type="text/javascript" src="Phone.js" ></script>
+	<script type="text/javascript" src="keyboard.js" ></script>
+	<div id="right-controller">
+			<div id="side-galery">
+				<div id="arrow-up"></div>
+				<div id="arrow-down"></div>
+				<div id="beds-img"></div>
+			</div>
+			<div id="remote">
+			<input id="input" type="text"/>
+			<div id="photo-remote"></div>
+			<div id="login">Login</div>
+			<div id="mic-img"></div>
+			<div id="mic-off"></div>
+			<p id="on">ON</p>
+			<p id="off">OFF</p>
+			<div id="camera-on"></div>
+			<div id="camera-off"></div>
+			<div id="volume-minus"></div>
+			<div id="volume-stop"></div>
+			<div id="volume-plus"></div>
+			
+			<div id="keyboard_button">
+			
+							<div   class="keyboardBTN" id="KBD1"></div>
+							<div  class="keyboardBTN" id="KBD2"></div>
+						</div>
+			</div>
+		
+		</div>
+		<ul id="keyboard">
+							<li class="symbol"><span class="off">`</span><span class="on">~</span></li>
+							<li class="symbol"><span class="off">1</span><span class="on">!</span></li>
+							<li class="symbol"><span class="off">2</span><span class="on">@</span></li>
+							<li class="symbol"><span class="off">3</span><span class="on">#</span></li>
+							<li class="symbol"><span class="off">4</span><span class="on">$</span></li>
+							<li class="symbol"><span class="off">5</span><span class="on">%</span></li>
+							<li class="symbol"><span class="off">6</span><span class="on">^</span></li>
+							<li class="symbol"><span class="off">7</span><span class="on">&amp;</span></li>
+							<li class="symbol"><span class="off">8</span><span class="on">*</span></li>
+							<li class="symbol"><span class="off">9</span><span class="on">(</span></li>
+							<li class="symbol"><span class="off">0</span><span class="on">)</span></li>
+							<li class="symbol"><span class="off">-</span><span class="on">_</span></li>
+							<li class="symbol"><span class="off">=</span><span class="on">+</span></li>
+							<li class="delete lastitem">delete</li>
+							<li class="tab">tab</li>
+							<li class="letter">q</li>
+							<li class="letter">w</li>
+							<li class="letter">e</li>
+							<li class="letter">r</li>
+							<li class="letter">t</li>
+							<li class="letter">y</li>
+							<li class="letter">u</li>
+							<li class="letter">i</li>
+							<li class="letter">o</li>
+							<li class="letter">p</li>
+							<li class="symbol"><span class="off">[</span><span class="on">{</span></li>
+							<li class="symbol"><span class="off">]</span><span class="on">}</span></li>
+							<li class="symbol lastitem"><span class="off">\</span><span class="on">|</span></li>
+							<li class="capslock">caps lock</li>
+							<li class="letter">a</li>
+							<li class="letter">s</li>
+							<li class="letter">d</li>
+							<li class="letter">f</li>
+							<li class="letter">g</li>
+							<li class="letter">h</li>
+							<li class="letter">j</li>
+							<li class="letter">k</li>
+							<li class="letter">l</li>
+							<li class="symbol"><span class="off">;</span><span class="on">:</span></li>
+							<li class="symbol"><span class="off">'</span><span class="on">&quot;</span></li>
+							<li class="return lastitem">return</li>
+							<li class="left-shift">shift</li>
+							<li class="letter">z</li>
+							<li class="letter">x</li>
+							<li class="letter">c</li>
+							<li class="letter">v</li>
+							<li class="letter">b</li>
+							<li class="letter">n</li>
+							<li class="letter">m</li>
+							<li class="symbol"><span class="off">,</span><span class="on">&lt;</span></li>
+							<li class="symbol"><span class="off">.</span><span class="on">&gt;</span></li>
+							<li class="symbol"><span class="off">/</span><span class="on">?</span></li>
+							<li class="right-shift lastitem">shift</li>
+							<li class="space lastitem">&nbsp;</li>
+						</ul>
+</body>
+</html>
